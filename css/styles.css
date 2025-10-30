@@ -1,0 +1,42 @@
+/*en css hay diferentes tipos de medidas */
+
+/*pseudo elementos para crear variables personalizadas*/
+/*custom properties*/
+:root{
+    --blanco: #FFFFFF;
+    --oscuro: #212121;
+    --primario: #4682B4;
+    --secundario: rgba(255,123,7,1);
+    --gris: #757575;
+}
+
+
+
+html { /*esto hace que este estilo se aplique a todo el doc html*/
+    font-size: 62.5%; /* todos los pixeles sean 10x*/
+}
+
+body {
+    font-size: 16px; /*un rem = 10 px*/
+    font-family: "Krub", sans-serif; /*colocar aca para que aplique a todo*/
+}
+
+.titulo { /*no iniciar con numeros una clase */
+    text-align: center;
+    font-size: 4 rem;
+    color: var(--primario); /*asi se llama (var) a la custom propertie hecha anteriormente*/
+   /*font-family:"Times New Roman", Times, serif;*/ /*fuentes seguras todos los navegadores las tienen*/
+}
+
+.titulo span{
+    font-size: 2rem;
+    /*important; etiqueta que marca algo importante, le gana a todo XD jsjs*/
+}
+
+
+/*h2 span: a todos los span que pertenezcan a h2*/
+  
+/*span etiqueta para afectar una parte del texto*/
+
+
+

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desarrollo Web 6-7</title>
+    <link href="preload" href ="/css/styles.css" as="style" /> <!--lanzar archivos HTML XD, descarga todo y mejora rendimiento-->
+    <link href="/css/styles.css" rel="stylesheet"/> <!--referencia que esta en el otro archivo, la relacion dice que es una hoja de estilo-->
+</head>
+
+<body>
+    <header>
+        <h1 class="titulo"> <!--ver especificidad-->
+            Desarrollo de Aplicaciones Web: <span>Website</span>
+        </h1>
+    </header>
+
+    <nav> <!--Para barras de navegacion, se coloca horizontalmente el texto con a-->
+        <a href="iindexx.html">Inicio</a> <!--href para insertar enlaces-->
+        <a href="unidades.html">Unidades</a>
+        <a href="calificaciones.html" >Calificaciones </a>
+        <a href="bibliografia.html" >Bibliografia</a>
+    </nav>
+
+    <img src ="/imagenes/portada_desarrollo_web.jpg"/>
+ 
+
+
+    <section> <!--agrupar elementos que van en el mismo grupo xd-->
+        <h2>
+            Domenica Rosales Galarza uwu
+        </h2>
+        <img src="/imagenes/location.svg"/>
+        <p>Guayaquil,Ecuador</p>
+        <a href="#">Contactar</a>
+    </section>
+
+    <main> <!--Un solo main por pag xd lo mas importante-->
+        <h2> <!--titulos-->
+            Tecnologías
+        </h2>
+
+        <section> <!--headin se recomienda poner section-->
+             <h3>
+            HTML
+        </h3>
+        <img src="/imagenes/HTML.svg"/>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Ut vitae gravida lectus, non placerat quam. 
+            Nulla eu dignissim dolor. Nullam purus lacus,
+            convallis finibus blandit sed, convallis sit amet augue.
+        </p>
+        </section>
+
+        <section>
+            <h3>
+                CSS
+            </h3>
+            <img src="/imagenes/CSS.svg"/>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Ut vitae gravida lectus, non placerat quam. 
+                Nulla eu dignissim dolor. Nullam purus lacus, 
+                convallis finibus blandit sed, convallis sit amet augue.
+            </p>
+            </section>
+
+            <section>
+                    <h3>
+                    Javascript
+                    </h3>
+                    <img src="/imagenes/javascript.svg"/>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                        Ut vitae gravida lectus, non placerat quam. 
+                        Nulla eu dignissim dolor. Nullam purus lacus, 
+                        convallis finibus blandit sed, convallis sit amet augue.
+                    </p>
+              
+            </section>
+
+        <section>
+             <h3>
+                Node.js
+            </h3>
+            <img src="/imagenes/node.svg"/>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                Ut vitae gravida lectus, non placerat quam. 
+                Nulla eu dignissim dolor. Nullam purus lacus, 
+                convallis finibus blandit sed, convallis sit amet augue.
+            </p>
+
+        </section>
+
+    </main> <!--solo un main por pag-->
+
+    <section>
+        <h2>
+            Contacto
+        </h2>
+        <form> <!--formulario-->
+            <fieldset> <!--cajita xd-->
+                <legend> <!--especie de titulo al formulario-->
+                    Contactanos
+                </legend>
+                <div> <!--pequeña agrupacion-->
+                    <label>Nombre</label>
+                    <input type="text" placeholder="Nombre"/> <!--entrada de datos-->
+                </div>
+                <div> <!--es como un ctrl g en figma JAJAJAJ-->
+                    <label>Correo</label>
+                    <input type="email"/>
+                </div>
+                <div>
+                    <label>Teléfono</label>
+                    <input type="tel" />
+                </div>
+                <div> <!--agrupar elementos asi como section-->
+                    <label>Mensaje</label>
+                    <textarea></textarea> <!--como el textbox pero sirve para mensajes mas grandes-->
+                </div> <!--div y section son contenedores-->
+                <div>
+                    <input type="submit" value="Enviar"/> <!--el submit hace una recarga de pagina, captura ese evento de submit y realiza la accion-->
+                </div> <!--value es el texto del boton-->
+            </fieldset>
+        </form>
+    </section>
+
+    <footer> <!--pie de pag-->
+        <p>
+            Todos los derechos reservados a Domuwu
+        </p>
+    </footer>
+</body>
+
+
+</html>
+
+<!--section cuando todos esos elementos forman parte de la misma seccion/tema dentro de una pagina-->
+<!--div es lo mismo pero mas pequeño, pero busca agrupar pequeños elementos que no dan un sentido logico a la pagina-->
+<!--div contenedor generico-->
