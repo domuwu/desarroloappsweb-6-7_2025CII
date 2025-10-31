@@ -21,6 +21,8 @@ body {
     font-family: "Krub", sans-serif; /*colocar aca para que aplique a todo*/
 }
 
+
+
 .titulo { /*no iniciar con numeros una clase */
     text-align: center;
     font-size: 4 rem;
@@ -33,7 +35,69 @@ body {
     /*important; etiqueta que marca algo importante, le gana a todo XD jsjs*/
 }
 
+.contenedor {
+    width: 120rem;
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+    margin-right: auto; /*auto es centrar*/
+    margin-left: auto;
 
+    /*margin: 0 auto 0 auto;
+    margin: 0 auto;*/
+
+}
+
+.nav-bg{
+    background-color: var(--secundario);
+}
+
+@media (min-width: 480px){
+
+}
+
+
+
+@media (min-width: 768px){
+    .navegacion-principal{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+@media (min-width: 1140px){
+
+}
+
+@media (min-width: 1400px){
+
+}
+
+.navegacion-principal{
+    
+    display: flex;
+    flex-direction: row; /*por defecto es row*/
+    justify-content: space-around; /*separar palabras elementos*/
+    /*align intems: justify para las columnas*/
+}
+
+.navegacion-principal a{
+  /*  background-color: var(--primario);
+    display: block; /*si se pone block se pone hacia abajo*/
+    color: var(--blanco);
+    text-decoration: none;
+    padding: 1rem; /*relleno*/
+    font-size: 2rem;
+    font-weight: bold;
+
+}
+
+.navegacion-principal a:hover {
+    background-color: var(--primario);/*recuerda que esto es un efecto al pasar el mouse*/
+    color: var(--oscuro);
+    text-decoration: underline; /*jeje esto lo añadí yo es para subrayar*/
+
+
+}
 /*h2 span: a todos los span que pertenezcan a h2*/
   
 /*span etiqueta para afectar una parte del texto*/

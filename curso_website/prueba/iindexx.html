@@ -4,9 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Desarrollo Web 6-7</title>
-    <link href="preload" href ="/css/styles.css" as="style" /> <!--lanzar archivos HTML XD, descarga todo y mejora rendimiento-->
-    <link href="/css/styles.css" rel="stylesheet"/> <!--referencia que esta en el otro archivo, la relacion dice que es una hoja de estilo-->
+    <link rel="preload" href ="/curso_website/css/normalize.css" as="style"/>
+    <link href ="/curso_website/css/normalize.css" rel="stylesheet"/>
+    <link href="preload" href ="/curso_website/css/styles.css" as="style" /> <!--lanzar archivos HTML XD, descarga todo y mejora rendimiento-->
+    <link href="/curso_website/css/styles.css" rel="stylesheet"/> <!--referencia que esta en el otro archivo, la relacion dice que es una hoja de estilo-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
+
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
      href="https://fonts.googleapis.com/css2?family=Krub:wght@200;400;700&display=swap" 
@@ -21,22 +24,25 @@
         </h1>
     </header>
 
-    <nav> <!--Para barras de navegacion, se coloca horizontalmente el texto con a-->
+    <div class="nav-bg">
+        <nav class="navegacion-principal contenedor"> <!--Para barras de navegacion, se coloca horizontalmente el texto con a-->
         <a href="iindexx.html">Inicio</a> <!--href para insertar enlaces-->
         <a href="unidades.html">Unidades</a>
         <a href="calificaciones.html" >Calificaciones </a>
         <a href="bibliografia.html" >Bibliografia</a>
     </nav>
+    </div>
 
-    <img src ="/imagenes/portada_desarrollo_web.jpg"/>
- 
+  
+
+    <img src ="/curso_website/imagenes/portada_desarrollo_web.jpg"/>
 
 
     <section> <!--agrupar elementos que van en el mismo grupo xd-->
         <h2>
             Domenica Rosales Galarza uwu
         </h2>
-        <img src="/imagenes/location.svg"/>
+        <img src="/curso_website/imagenes/location.svg"/>
         <p>Guayaquil,Ecuador</p>
         <a href="#">Contactar</a>
     </section>
@@ -50,7 +56,7 @@
              <h3>
             HTML
         </h3>
-        <img src="/imagenes/HTML.svg"/>
+        <img src="/curso_website/imagenes/HTML.svg"/>
         <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit.
             Ut vitae gravida lectus, non placerat quam. 
@@ -63,7 +69,7 @@
             <h3>
                 CSS
             </h3>
-            <img src="/imagenes/CSS.svg"/>
+            <img src="/curso_website/imagenes/CSS.svg"/>
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 Ut vitae gravida lectus, non placerat quam. 
@@ -76,7 +82,7 @@
                     <h3>
                     Javascript
                     </h3>
-                    <img src="/imagenes/javascript.svg"/>
+                    <img src="/curso_website/imagenes/javascript.svg"/>
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
                         Ut vitae gravida lectus, non placerat quam. 
@@ -90,7 +96,7 @@
              <h3>
                 Node.js
             </h3>
-            <img src="/imagenes/node.svg"/>
+            <img src="/curso_website/imagenes/node.svg"/>
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
                 Ut vitae gravida lectus, non placerat quam. 
