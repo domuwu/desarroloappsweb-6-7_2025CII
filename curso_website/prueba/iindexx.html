@@ -48,16 +48,20 @@
         </div>
     </section>
 
-    <main class="contenedor"> <!--Un solo main por pag xd lo mas importante-->
+    <main class="contenedor sombra"> <!--Un solo main por pag xd lo mas importante-->
         <h2> <!--titulos-->
             Tecnologías
         </h2>
-
-        <section> <!--headin se recomienda poner section-->
+        <div class="lenguajes">
+        
+            <section class="lenguaje"> <!--headin se recomienda poner section-->
              <h3>
             HTML
         </h3>
-        <img src="/curso_website/imagenes/HTML.svg"/>
+        <div class="iconos">
+            <img src="/curso_website/imagenes/HTML.svg"/>
+        </div>
+        
         <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit.
             Ut vitae gravida lectus, non placerat quam. 
@@ -66,11 +70,15 @@
         </p>
         </section>
 
-        <section>
+        <section class="lenguaje">
             <h3>
                 CSS
             </h3>
-            <img src="/curso_website/imagenes/CSS.svg"/>
+            <div class="iconos">
+                <img src="/curso_website/imagenes/CSS.svg"/>
+
+            </div>
+            
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 Ut vitae gravida lectus, non placerat quam. 
@@ -79,11 +87,15 @@
             </p>
             </section>
 
-            <section>
+            <section class="lenguaje">
                     <h3>
                     Javascript
                     </h3>
-                    <img src="/curso_website/imagenes/javascript.svg"/>
+                    <div class="iconos">
+                        <img src="/curso_website/imagenes/javascript.svg"/>
+
+                    </div>
+                    
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
                         Ut vitae gravida lectus, non placerat quam. 
@@ -93,11 +105,15 @@
               
             </section>
 
-        <section>
+        <section class="lenguaje">
              <h3>
                 Node.js
             </h3>
-            <img src="/curso_website/imagenes/node.svg"/>
+            <div class="iconos">
+                <img src="/curso_website/imagenes/node.svg"/>
+
+            </div>
+            
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
                 Ut vitae gravida lectus, non placerat quam. 
@@ -107,41 +123,48 @@
 
         </section>
 
-    </main> <!--solo un main por pag-->
+        </div>
+
+        
+
+     <!--solo un main por pag-->
 
     <section>
         <h2>
             Contacto
         </h2>
-        <form> <!--formulario-->
+        <form class="formulario"> <!--formulario-->
             <fieldset> <!--cajita xd-->
                 <legend> <!--especie de titulo al formulario-->
                     Contactanos
                 </legend>
-                <div> <!--pequeña agrupacion-->
+                <div class="contenedor-campos">
+                <div class="campo"> <!--pequeña agrupacion-->
                     <label>Nombre</label>
-                    <input type="text" placeholder="Nombre"/> <!--entrada de datos-->
+                    <input class ="input-text" type="texto" placeholder="Nombre"/> <!--entrada de datos-->
                 </div>
-                <div> <!--es como un ctrl g en figma JAJAJAJ-->
+                <div class="campo"> <!--es como un ctrl g en figma JAJAJAJ-->
                     <label>Correo</label>
-                    <input type="email"/>
+                    <input class ="input-text" type="email"/>
                 </div>
-                <div>
+                <div class="campo">
                     <label>Teléfono</label>
-                    <input type="tel" />
+                    <input class ="input-text" class ="input-text" type="tel" />
                 </div>
-                <div> <!--agrupar elementos asi como section-->
+                <div class="campo"> <!--agrupar elementos asi como section-->
                     <label>Mensaje</label>
-                    <textarea></textarea> <!--como el textbox pero sirve para mensajes mas grandes-->
+                    <textarea class ="input-text"></textarea> <!--como el textbox pero sirve para mensajes mas grandes-->
                 </div> <!--div y section son contenedores-->
-                <div>
-                    <input type="submit" value="Enviar"/> <!--el submit hace una recarga de pagina, captura ese evento de submit y realiza la accion-->
+                </div>
+                <div class="enviar">
+                    <input class ="boton" type="submit" value="Enviar"/> <!--el submit hace una recarga de pagina, captura ese evento de submit y realiza la accion-->
                 </div> <!--value es el texto del boton-->
             </fieldset>
         </form>
     </section>
+    </main>
 
-    <footer> <!--pie de pag-->
+    <footer class="footer"> <!--pie de pag-->
         <p>
             Todos los derechos reservados a Domuwu
         </p>
